@@ -15,7 +15,7 @@ func Sqrt(x float64) (float64, error) {
     if x < 0 {
         return 0, ErrNegativeSqrt(x)
     }
-    // built-in sqrt > Newton's Method ;)
+    /* built-in sqrt > Newton's Method */
     return math.Sqrt(x), nil
 }
 

@@ -8,9 +8,9 @@ import (
 )
 
 func rot13(char *byte) {
-    // convert to lower-case
+    /* convert to lower-case */
     c := unicode.ToLower(rune(*char))
-    // rotate by 13
+    /* rotate by 13 */
     if c >= 'a' && c < 'n' {
         *char += 13
     } else if c >= 'n' && c <= 'z' {
